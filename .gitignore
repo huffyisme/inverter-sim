@@ -1,0 +1,13 @@
+# captures, service bundles and manuals stay out of the repo
+*.pcapng
+*.pcap*
+*.pdf
+*.zip
+*.db
+logs/
+__pycache__/
+*.pyc
+.venv/
+# per-instance saved rigs
+manager_config.json
+config_*.json
