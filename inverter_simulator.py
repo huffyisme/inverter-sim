@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Inverter_simulatorV1.py - SMA Inverter Simulator for HIL testing of an
+inverter_simulator.py - SMA Inverter Simulator for HIL testing of an
 SMA Hybrid Controller (HYC).
 
   * A CONFIGURABLE FLEET of simulated inverters (SMA "Sunny Central Kodiak"
@@ -38,9 +38,9 @@ Only dependency:  pip install 'pymodbus==3.6.9'
 Run (venv recommended on Raspberry Pi OS):
     python3 -m venv .venv
     .venv/bin/pip install 'pymodbus==3.6.9'
-    .venv/bin/python Inverter_simulatorV1.py --inverters 3 --base-port 1502 --meter-port 1600
+    .venv/bin/python inverter_simulator.py --inverters 3 --base-port 1502 --meter-port 1600
     # browse to http://<pi-ip>:8080
-(ports < 1024 need root: sudo .venv/bin/python Inverter_simulatorV1.py ...)
+(ports < 1024 need root: sudo .venv/bin/python inverter_simulator.py ...)
 
 --inverters N just sets how many to spawn AT STARTUP; add/remove more anytime
 in the GUI.
