@@ -1,0 +1,6 @@
+# The Pi runs these directly (./inverter_simulator.py). A CRLF shebang line
+# makes Linux fail with "bad interpreter: /usr/bin/env python3^M", so keep
+# checked-in line endings LF regardless of the machine that committed them.
+*.py  text eol=lf
+*.md  text eol=lf
+*.sh  text eol=lf
